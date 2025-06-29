@@ -1,5 +1,5 @@
 // Java Program to demonstrate Brute Force Method to check if a number is prime
-class Geeks
+class calc
 {
     static boolean isPrime(int n)
     {
