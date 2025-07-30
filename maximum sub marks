@@ -1,0 +1,43 @@
+/*TestCase:
+    
+Input :
+    Enter no of semester : 3
+    Enter no of subjects in 1st sem : 3
+    Enter no of subjects in 2nd sem : 4
+    Enter no of subjects in 3rd sem : 2
+
+    Enter marks of 1st sem : 50 60 70
+    Enter marks of 2nd sem : 90 98 76 67
+    Enter marks of 3rd sem : 89 76
+
+Output :
+    Max marks in 1st sem : 70
+    Max marks in 2nd sem : 98
+    Max marks in 3rs sem : 89  */
+
+
+
+ import java.util.*;
+    class Main {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner (System.in);
+       int sem= sc.nextInt();
+       
+       
+       for(int i = 1 ;i<=sem;i++){
+           System.out.println("Enter no of subjects in"+ i +"sem :"+sub);
+           int sub= sc.nextInt();
+           int arr[]= new int [sub];
+           for(int j =0;j<=sub;j++){
+             arr[j]=sc.nextInt();
+           }
+           int max = Integer.MIN_VALUE;
+              System.out.println("  Max marks in"+  "sem : " ,arr[j]);
+           }
+               
+           }
+           
+       }
+       
+    }
+}
