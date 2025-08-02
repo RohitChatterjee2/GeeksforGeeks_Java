@@ -1,0 +1,29 @@
+import java.util.*;
+public class calc {
+    public static void main(String[] args ){
+        Scanner sc = new Scanner (System.in);
+        String str = sc.nextLine();
+        crawley(str);
+    }
+    public static void crawley(String str){
+        int alpha= 0;
+        int digit = 0;
+        int space = 0;
+        
+        for (int i =0;i<str.length();i++){
+            char ch = str.charAt(i);
+            if(Character.isLetter(ch) && Character.isLowerCase(ch)){
+                alpha++;
+                
+            }
+            if(Character.isDigit(ch)){
+                digit++;
+                
+            }
+            if(ch==' '){
+                space++;
+            }
+        }
+        System.out.print(alpha + " " +digit+ " " + space);
+    }
+}
