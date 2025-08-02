@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        if(isPalindrome(str)){
+            System.out.println("YES");
+        }else{
+            System.out.println("NO");
+        }
+    }
+    
+    public static boolean isPalindrome(String str){
+        // Sohom@10#Ghosh   ----> Sohom10Ghosh
+        
+        
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < str.length(); i++){
+            char ch = str.charAt(i);
+            if(Character.isLetterOrDigit(ch)){
+                sb.append(Character.toLowerCase(ch));  // sb.append(ch);    sb = Character.toLowerCase(ch);   Sohom10Ghosh
+            } 
+        }
+        
+        StringBuilder ab = new StringBuilder(sb).reverse();
+        if(sb.toString().equals(ab.toString())){
+            return true;
+        }
+        return false;
+    }
+}
