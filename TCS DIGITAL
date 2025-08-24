@@ -1,0 +1,21 @@
+import java.util.*;
+public class calc {
+    public static void main(String[] args){
+        Scanner sc = new Scanner (System.in);
+        String str= sc.nextLine();
+        int l = str.length();
+        StringBuilder sb = new StringBuilder(str);
+        sb=sb.reverse();
+        String bobby= sb.toString();
+        if(bobby.equals(str))
+        {
+            System.out.println("0");
+        }
+        else
+        {
+            System.out.println(str.length());
+        }
+            
+        
+    }
+}
